@@ -21,7 +21,7 @@ class EnhancedSwitchTest {
             case SUNDAY:
                 return 24;
             default:
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException(dayOfWeek.name() + " was given, but not handled");
         }
     }
 
